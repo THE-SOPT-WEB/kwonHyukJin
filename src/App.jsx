@@ -41,11 +41,13 @@ function App() {
     };
   };
 
+  const getUrl = () => (process.env.NODE_ENV === 'development' ? '/api' : 'https://api.github.com');
+
   const followWebPart = async () => {
     if (patRef.current && patRef.current.value) {
       const promiseList = await Promise.all(
         ids.map((id) => {
-          fetch(`/api/user/following/${id}`, {
+          return fetch(`${getUrl()}/user/following/${id}`, {
             method: 'PUT',
             body: null,
             headers: provideHeaders(patRef.current.value),
