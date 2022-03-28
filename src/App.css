@@ -1,0 +1,50 @@
+main {
+  height: 100vh;
+  background-color: mintcream;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+h2 {
+  background-color: #8d56fc;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+article > p {
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  width: 300px;
+  height: auto;
+}
+
+button {
+  width: 300px;
+
+  cursor: pointer;
+  background-color: #8040ff;
+
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+
+  font-weight: 500;
+}
