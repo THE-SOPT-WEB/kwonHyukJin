@@ -1,0 +1,10 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "4차 세미나",
+      "desc": "API 통신 기초",
+      "isLiked": true
+    }
+  ]
+}
